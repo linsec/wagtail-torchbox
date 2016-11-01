@@ -1,4 +1,4 @@
-{% load torchbox_tags wagtailcore_tags wagtailimages_tags %}
+{% load torchbox_tags wagtailcore_tags wagtailimages_tags i18n %}
 
 <ul>
     {% for client in clients %}
@@ -9,4 +9,4 @@
         </li>
     {% endfor %}
 </ul>
-<button>Show more</button>
+<button>{% trans "Show more" %}</button>

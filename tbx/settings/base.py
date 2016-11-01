@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 # Django settings for wagtail-torchbox project.
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -6,12 +7,6 @@ import os
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
-
-ADMINS = (
-    ('Nick Smith', 'nicks@torchbox.com'),
-)
-
-MANAGERS = ADMINS
 
 EMAIL_SUBJECT_PREFIX = '[wagtail-torchbox] '
 
@@ -25,7 +20,7 @@ EMAIL_SUBJECT_PREFIX = '[wagtail-torchbox] '
 INSTALLED_APPS = [
     'tbx.core',
 
-    'wagtail.contrib.wagtailsearchpromotions',
+    # 'wagtail.contrib.wagtailsearchpromotions',
     'wagtail.wagtailforms',
     'wagtail.wagtailredirects',
     'wagtail.wagtailembeds',
@@ -82,7 +77,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'tbx.core.context_processors.fb_app_id',
                 'wagtail.contrib.settings.context_processors.settings',
             ],
         },
@@ -97,8 +91,10 @@ WSGI_APPLICATION = 'tbx.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'torchbox',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': 'torchbox',
     }
 }
 
@@ -124,9 +120,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-gb'
+LANGUAGE_CODE = 'zh-Hans'
 
-TIME_ZONE = 'Europe/London'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -165,16 +161,16 @@ COMPRESS_PRECOMPILERS = [
 
 # Use Redis as the cache backend for extra performance
 
-CACHES = {
-    'default': {
-        'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': '127.0.0.1:6379',
-        'KEY_PREFIX': 'tbx',
-        'OPTIONS': {
-            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
-        }
-    }
-}
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django_redis.cache.RedisCache',
+#         'LOCATION': '127.0.0.1:6379',
+#         'KEY_PREFIX': 'tbx',
+#         'OPTIONS': {
+#             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+#         }
+#     }
+# }
 
 
 # Use Elasticsearch as the search backend for extra performance and better search results
@@ -189,7 +185,8 @@ WAGTAILSEARCH_BACKENDS = {
 
 # Wagtail settings
 
-WAGTAIL_SITE_NAME = "Torchbox"
+WAGTAIL_SITE_NAME = "天枢科技"
+WAGTAIL_ENABLE_UPDATE_CHECK = False
 
 # Override the Image class used by wagtailimages with a custom one
 WAGTAILIMAGES_IMAGE_MODEL = 'torchbox.TorchboxImage'

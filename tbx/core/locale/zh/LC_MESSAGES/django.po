@@ -1,0 +1,391 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-01 05:32-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: models.py:120 models.py:216 models.py:473 models.py:488 models.py:539
+#: models.py:785
+msgid "title"
+msgstr "标题"
+
+#: models.py:121
+msgid "content"
+msgstr "内容"
+
+#: models.py:133
+msgid "External link"
+msgstr "外部链接"
+
+#: models.py:139
+msgid "link page"
+msgstr "链接页面"
+
+#: models.py:146
+msgid "link document"
+msgstr "链接文档"
+
+#: models.py:217
+msgid "Link title"
+msgstr "链接标题"
+
+#: models.py:296
+msgid "colour"
+msgstr "颜色"
+
+#: models.py:297
+msgid ""
+"Hex ref colour of link and background gradient, use #23b0b0 for default blue"
+msgstr "背景颜色值（16进制），使用 #23b0b0 作为默认颜色：蓝色."
+
+#: models.py:304
+msgid "background"
+msgstr "背景"
+
+#: models.py:312
+msgid "logo"
+msgstr "Logo"
+
+#: models.py:316
+msgid "text"
+msgstr "文本"
+
+#: models.py:335 models.py:408 models.py:496 models.py:783 models.py:876
+msgid "image"
+msgstr "图片"
+
+#: models.py:344
+msgid "hero intro"
+msgstr "主页横幅介绍"
+
+#: models.py:345
+msgid ""
+"Optional. The numeric ID of a Vimeo video to replace the background image."
+msgstr "可选。Vimeo视频的数字ID，用来替换背景图片。"
+
+#: models.py:356
+msgid "blog title"
+msgstr "文章标题"
+
+#: models.py:357
+msgid "clients title"
+msgstr "客户标题"
+
+#: models.py:360
+msgid "Homepage"
+msgstr "首页"
+
+#: models.py:365
+msgid "Hero"
+msgstr "横幅"
+
+#: models.py:371
+msgid "Clients"
+msgstr "客户"
+
+#: models.py:391 models.py:396 models.py:401 models.py:467 models.py:472
+#: models.py:486 models.py:980
+msgid "page"
+msgstr "页面"
+
+#: models.py:423 models.py:514 models.py:560
+msgid "main image"
+msgstr "主图片"
+
+#: models.py:425 models.py:516 models.py:562
+msgid "heading"
+msgstr "标题"
+
+#: models.py:426
+msgid "quote"
+msgstr "引用"
+
+#: models.py:427
+msgid "stream field"
+msgstr "stream字段"
+
+#: models.py:428
+msgid "email"
+msgstr "电子邮件"
+
+#: models.py:436 models.py:728 models.py:884
+msgid "feed image"
+msgstr "feed图片"
+
+#: models.py:440
+msgid "show in play menu"
+msgstr "显示在play菜单"
+
+#: models.py:449
+msgid "Content block"
+msgstr "内容块"
+
+#: models.py:455 models.py:768 models.py:851 models.py:908
+msgid "Common page configuration"
+msgstr "常用页面配置"
+
+#: models.py:461
+msgid "StandardPage"
+msgstr "标准页"
+
+#: models.py:474 models.py:540
+msgid "svg"
+msgstr "SVG格式图片编码"
+
+#: models.py:475 models.py:489 models.py:541
+msgid "description"
+msgstr "描述"
+
+#: models.py:487
+msgid "year"
+msgstr "年"
+
+#: models.py:517 models.py:563 models.py:815 models.py:868
+msgid "intro"
+msgstr "介绍"
+
+#: models.py:519
+msgid "involvement title"
+msgstr "备注"
+
+#: models.py:526
+msgid "Header buttons"
+msgstr "顶部按钮"
+
+#: models.py:527
+msgid "Content blocks"
+msgstr "内容块"
+
+#: models.py:528
+msgid "Offices"
+msgstr "办事处"
+
+#: models.py:533
+msgid "AboutPage"
+msgstr "关于页"
+
+#: models.py:550
+msgid "Service Item"
+msgstr "服务"
+
+#: models.py:578
+msgid "Service Page"
+msgstr "服务页"
+
+#: models.py:698
+msgid "author"
+msgstr "作者"
+
+#: models.py:719 models.py:786
+msgid "body"
+msgstr "主体"
+
+#: models.py:721
+msgid "Post date"
+msgstr "发布日期"
+
+#: models.py:739
+msgid "Blog Page"
+msgstr "新闻页"
+
+#: models.py:760
+msgid "Author"
+msgstr "作者"
+
+#: models.py:763
+msgid "Related links"
+msgstr "相关链接"
+
+#: models.py:764
+msgid "Tags"
+msgstr "标签"
+
+#: models.py:795
+msgid "Reason To Join"
+msgstr "加入我们的理由"
+
+#: models.py:799
+msgid "job title"
+msgstr "岗位名称"
+
+#: models.py:800
+msgid "job intro"
+msgstr "岗位介绍"
+
+#: models.py:801
+msgid "url"
+msgstr "网址链接"
+
+#: models.py:802
+msgid "location"
+msgstr "地点"
+
+#: models.py:812
+msgid "Job Item"
+msgstr "岗位"
+
+#: models.py:818
+msgid "listing_intro"
+msgstr "岗位列表"
+
+#: models.py:819
+msgid ""
+"Shown instead of the intro when job listings are included on other pages"
+msgstr "当岗位列表包含在其它页面时，显示该字段，不再显示介绍字段"
+
+#: models.py:821
+msgid "no jobs that fit"
+msgstr "没有合适的岗位"
+
+#: models.py:822
+msgid "terms and conditions"
+msgstr "条款"
+
+#: models.py:823
+msgid "refer a friend"
+msgstr "推荐朋友"
+
+#: models.py:824
+msgid "reasons intro"
+msgstr "为什么加入我们"
+
+#: models.py:855
+msgid "Job Index Page"
+msgstr "招聘页"
+
+#: models.py:864
+msgid "first name"
+msgstr "名字"
+
+#: models.py:865
+msgid "last name"
+msgstr "姓氏"
+
+#: models.py:866
+msgid "role"
+msgstr "角色"
+
+#: models.py:867
+msgid "is_senior"
+msgstr "是否有高级权限"
+
+#: models.py:869
+msgid "biography"
+msgstr "自我介绍"
+
+#: models.py:913
+msgid "Person Page"
+msgstr "人物页"
+
+#: models.py:923
+msgid "Person Index Page"
+msgstr "人物索引页"
+
+#: models.py:944
+msgid "contact telphone"
+msgstr "联系电话"
+
+#: models.py:945
+msgid "Telephone"
+msgstr "电话"
+
+#: models.py:947
+msgid "contact email"
+msgstr "联系人电子邮件"
+
+#: models.py:948
+msgid "Email address"
+msgstr "电子邮件地址"
+
+#: models.py:950
+msgid "contact twitter"
+msgstr "联系人徽博"
+
+#: models.py:951
+msgid "Twitter"
+msgstr ""
+
+#: models.py:969
+msgid "Global Settings"
+msgstr "全局设置"
+
+#: models.py:973 models.py:976
+msgid "subitem"
+msgstr "子项"
+
+#: models.py:981
+msgid "subitems"
+msgstr "子项"
+
+#: models.py:984
+msgid "Menu Item"
+msgstr "菜单项"
+
+#: models.py:992
+msgid "Menu"
+msgstr "菜单"
+
+#: models.py:997
+msgid "menu"
+msgstr "菜单"
+
+#: models.py:1004
+msgid "Main Menu"
+msgstr "主菜单"
+
+#: templates/torchbox/about_page.html:25
+msgid "Read our story"
+msgstr "了解我们"
+
+#: templates/torchbox/about_page.html:56
+msgid "Our offices"
+msgstr "我们的办公点"
+
+#: templates/torchbox/about_page.html:72
+msgid "Our four core values"
+msgstr "我们的核心价值"
+
+#: templates/torchbox/base.html:256
+msgid "Content managed by"
+msgstr "版权所有@"
+
+#: templates/torchbox/includes/clients.html:12
+msgid "Show more"
+msgstr "更多"
+
+#~ msgid "related links"
+#~ msgstr "相关链接"
+
+#~ msgid "Blog Index Page"
+#~ msgstr "新闻索引页"
+
+#~ msgid "author who has left Torchbox"
+#~ msgstr "作者"
+
+#~ msgid "Intro (deprecated. Use streamfield instead)"
+#~ msgstr "介绍（目前不使用）"
+
+#~ msgid "Body (deprecated. Use streamfield instead)"
+#~ msgstr "主体（目前不使用）"
+
+#~ msgid "intro title"
+#~ msgstr "intro标题"
+
+#~ msgid "intro body"
+#~ msgstr "intro主体"
+
+#~ msgid "work title"
+#~ msgstr "work标题"

@@ -1,5 +1,5 @@
 {% extends "torchbox/base.html" %}
-{% load torchbox_tags wagtailcore_tags wagtailimages_tags staticfiles %}
+{% load torchbox_tags wagtailcore_tags wagtailimages_tags staticfiles i18n %}
 
 {% block content %}
 
@@ -22,7 +22,7 @@
                     {% endfor %}
                 </div>
                 {% endif %}
-                <h2 class="story"><span>Read our story</span></h2>
+                <h2 class="story"><span>{% trans 'Read our story' %}</span></h2>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@
 
             {% if page.offices.all %}
             <div class="offices">
-                <h2>Our offices</h2>
+                <h2>{% trans 'Our offices' %}</h2>
                 <ul>
                     {% for office in page.offices.all %}
                     <li>
@@ -69,7 +69,7 @@
             {% endif %}
 
             <div class="values">
-                <h2>Our four core values</h2>
+                <h2>{% trans 'Our four core values' %}</h2>
                 <ul>
                     <li>
                         <img src="{% static 'torchbox/images/corevalue-better.jpg' %}" alt="Make clients happy">

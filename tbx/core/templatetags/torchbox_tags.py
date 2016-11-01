@@ -11,6 +11,9 @@ register = template.Library()
 def get_popular_tags(model):
     return model.get_popular_tags()
 
+@register.simple_tag
+def wg_site_name():
+    return getattr(settings, 'WAGTAIL_SITE_NAME', "")
 
 # settings value
 @register.assignment_tag
@@ -95,15 +98,15 @@ def homepage_blog_listing(context, count=6):
 
 
 # Work feed for home page
-@register.inclusion_tag('torchbox/tags/homepage_work_listing.html', takes_context=True)
-def homepage_work_listing(context, count=3):
-    work = play_filter(WorkPage.objects.filter(live=True),
-                       count)
-    return {
-        'work': work,
-        # required by the pageurl tag that we want to use within this template
-        'request': context['request'],
-    }
+# @register.inclusion_tag('torchbox/tags/homepage_work_listing.html', takes_context=True)
+# def homepage_work_listing(context, count=3):
+#     work = play_filter(WorkPage.objects.filter(live=True),
+#                        count)
+#     return {
+#         'work': work,
+#         # required by the pageurl tag that we want to use within this template
+#         'request': context['request'],
+#     }
 
 
 # Jobs feed for home page
@@ -128,13 +131,13 @@ def homepage_job_listing(context, count=3, intro_text=None):
 
 
 # Advert snippets
-@register.inclusion_tag('torchbox/tags/adverts.html', takes_context=True)
-def adverts(context):
-    return {
-        'adverts': Advert.objects.all(),
-        'request': context['request'],
-    }
-
+# @register.inclusion_tag('torchbox/tags/adverts.html', takes_context=True)
+# def adverts(context):
+#     return {
+#         'adverts': Advert.objects.all(),
+#         'request': context['request'],
+#     }
+#
 
 # blog posts by team member
 @register.inclusion_tag('torchbox/tags/person_blog_listing.html', takes_context=True)
@@ -154,7 +157,7 @@ def work_and_blog_listing(context, count=10, marketing=False):
     An interleaved list of work and blog items.
     """
     blog_posts = BlogPage.objects.filter(live=True)
-    works = WorkPage.objects.filter(live=True)
+    works = None # WorkPage.objects.filter(live=True)
     if marketing:
         featured_items = context['page'].featured_items.all()
 
@@ -172,7 +175,7 @@ def work_and_blog_listing(context, count=10, marketing=False):
         blog_posts = blog_posts.exclude(marketing_only=True)
         works = works.exclude(marketing_only=True)
         featured_items = []
-    
+
     # If (remaining) count is odd, blog_count = work_count + 1
     blog_count = (count + 1) / 2
     work_count = count / 2
